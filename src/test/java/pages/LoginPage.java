@@ -4,27 +4,28 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class LoginPage {
-
 	WebDriver driver;
-
-	private By email = By.cssSelector("#email");
-	private By passwordBox = By.xpath("//input[@id='password']");
-	private By loginButton = By.cssSelector("input[name='submit']");
-
-
+	private By logout = By.xpath("//input[@value='Log out']");
+	
+	
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
 	}
 
-	public HomePage login(String username, String password ) {
-
-		driver.findElement(email).sendKeys(username);
-		driver.findElement(passwordBox).sendKeys(password);
-		driver.findElement(loginButton).click();
-		
-		
-		
-		return new HomePage(driver);
+	public void login() {
+		driver.findElement(By.id("email")).sendKeys("abhishek.raj@outlook.in");
+		driver.findElement(By.id("password")).sendKeys("XEd9iYNf9JP@Q8n");
+		driver.findElement(By.name("submit")).click();
 	}
+	public void invalid() {
+		driver.findElement(By.id("email")).sendKeys("abc@gmail.com") ;
+		driver.findElement(By.id("password")).sendKeys("abc");
+		driver.findElement(By.name("submit")).click();
+	}
+	public void logout() {
+		//Logout button click
+				driver.findElement(logout).click();
+	}
+	
 
 }
