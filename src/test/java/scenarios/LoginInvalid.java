@@ -18,8 +18,8 @@ public class LoginInvalid {
 		driver.get("http://demo.guru99.com/insurance/v1/index.php");
 		driver.manage().window().maximize();
 		
-		LoginPage log = new LoginPage(driver);
-		log.invalid();
+		LoginPage logs = new LoginPage(driver);
+		logs.invalid();
 		
 		//login button present or not
 		Assert.assertTrue(driver.findElement(login).isDisplayed());

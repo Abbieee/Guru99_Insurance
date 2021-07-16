@@ -19,8 +19,8 @@ public class Login {
 		driver.get("http://demo.guru99.com/insurance/v1/index.php");
 		driver.manage().window().maximize();
 		
-		LoginPage log = new LoginPage(driver);
-		log.login();
+		LoginPage logs = new LoginPage(driver);
+		logs.login();
 		
 	    String title = driver.getTitle();
 		Assert.assertEquals(title, "Insurance Broker System");

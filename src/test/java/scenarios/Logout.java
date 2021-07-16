@@ -18,12 +18,12 @@ public class Logout {
 		driver.get("http://demo.guru99.com/insurance/v1/index.php");
 		driver.manage().window().maximize();
 		
-		LoginPage log = new LoginPage(driver);
-		log.login();
+		LoginPage logs = new LoginPage(driver);
+		logs.login();
 		//Log out button present
 		Assert.assertTrue(driver.findElement(logout).isDisplayed());
 		
-		log.logout();
+		logs.logout();
 		
 		//Login button present
 		Assert.assertTrue(driver.findElement(login).isDisplayed());

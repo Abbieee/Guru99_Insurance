@@ -14,7 +14,7 @@ import pages.LoginPage;
 public class HomePageTest {
 	private By rad = By.xpath("//input[@id='quotation_windscreenrepair_t']"); 
 	private By quote = By.id("quotation_vehicle_attributes_value");
-	private By calc = By.xpath("//p[@id='calculatedpremium']");
+	private By calculate = By.xpath("//p[@id='calculatedpremium']");
 	private By park = By.name("parkinglocation");
 	@Test
 	public void requestquotation() {
@@ -24,10 +24,10 @@ public class HomePageTest {
 		driver.get("http://demo.guru99.com/insurance/v1/index.php");
 		driver.manage().window().maximize();
 		
-		LoginPage log = new LoginPage(driver);
-		log.login();
-		HomePage h = new HomePage(driver);
-		h.request();
+		LoginPage logs = new LoginPage(driver);
+		logs.login();
+		HomePage home = new HomePage(driver);
+		home.request();
 		
 		//Conditions applied
 		WebElement radio = driver.findElement(rad);
@@ -40,11 +40,11 @@ public class HomePageTest {
 		parking.selectByIndex(3);
 		
 		
-		h.premium();
+		home.premium();
 		
-		Assert.assertTrue(driver.findElement(calc).isDisplayed());
+		Assert.assertTrue(driver.findElement(calculate).isDisplayed());
 		
-		h.reset();
+		home.reset();
 		driver.quit();
 		
      
