@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-07-20T00:08:14 IST" name="Suite" finished-at="2021-07-20T00:08:44 IST" duration-ms="29911">
+    <groups>
+    </groups>
+    <test started-at="2021-07-20T00:08:14 IST" name="Test" finished-at="2021-07-20T00:08:44 IST" duration-ms="29911">
+      <class name="scenario.Logout">
+        <test-method signature="out()[pri:0, instance:scenario.Logout@2accdbb5]" started-at="2021-07-20T00:08:30 IST" name="out" finished-at="2021-07-20T00:08:39 IST" duration-ms="8720" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- out -->
+      </class> <!-- scenario.Logout -->
+      <class name="scenario.LoginInvalid">
+        <test-method signature="invalidlogin()[pri:0, instance:scenario.LoginInvalid@6631f5ca]" started-at="2021-07-20T00:08:39 IST" name="invalidlogin" finished-at="2021-07-20T00:08:44 IST" duration-ms="5375" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidlogin -->
+      </class> <!-- scenario.LoginInvalid -->
+      <class name="scenario.InsurancePage">
+        <test-method signature="requestquotation()[pri:0, instance:scenario.InsurancePage@1e6454ec]" started-at="2021-07-20T00:08:21 IST" name="requestquotation" finished-at="2021-07-20T00:08:30 IST" duration-ms="8627" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- requestquotation -->
+      </class> <!-- scenario.InsurancePage -->
+      <class name="scenario.Login">
+        <test-method signature="validlogin()[pri:0, instance:scenario.Login@3d1cfad4]" started-at="2021-07-20T00:08:14 IST" name="validlogin" finished-at="2021-07-20T00:08:21 IST" duration-ms="7122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validlogin -->
+      </class> <!-- scenario.Login -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
