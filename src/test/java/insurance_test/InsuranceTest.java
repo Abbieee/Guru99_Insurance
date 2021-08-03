@@ -18,8 +18,8 @@ public class InsuranceTest {
 		driver.get("http://demo.guru99.com/insurance/v1/index.php");
 		driver.manage().window().maximize();
 
-		driver.findElement(By.id("email")).sendKeys("abhishek.raj@outlook.in");
-		driver.findElement(By.id("password")).sendKeys("XEd9iYNf9JP@Q8n");
+		driver.findElement(By.id("email")).sendKeys("abhishek.raj@xxxx.com");
+		driver.findElement(By.id("password")).sendKeys("XEd9iYn");
 		driver.findElement(By.name("submit")).click();
 		String title = driver.getTitle();
 		Assert.assertEquals(title, "Insurance Broker System");
@@ -40,8 +40,8 @@ public class InsuranceTest {
 		driver.get("http://demo.guru99.com/insurance/v1/index.php");
 		driver.manage().window().maximize();
 
-		driver.findElement(By.id("email")).sendKeys("abhishek.raj@outlook.in");
-		driver.findElement(By.id("password")).sendKeys("XEd9iYNf9JP@Q8n");
+		driver.findElement(By.id("email")).sendKeys("abhishek.raj@xxxx.com");
+		driver.findElement(By.id("password")).sendKeys("XEd9iYn");
 		driver.findElement(By.name("submit")).click();
 
 		// Opening Request Quotation Form
